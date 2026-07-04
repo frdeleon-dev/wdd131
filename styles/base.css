@@ -28,13 +28,13 @@ body{
 }
 header {
     
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 2rem 0 0 0;
     text-align: center;
     color: white;
 }
 header span {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3rem;
     display: block;
     margin-bottom: 2rem;
@@ -45,16 +45,17 @@ nav {
     justify-content:space-around;
     padding: 1rem 0;    
     gap: 1rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 nav a {
-    color: var(--text-light);
+    color: var(--text-dark);
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 nav a:hover {
     text-decoration: overline;
-    color: yellow;
+    color: rgb(6, 20, 209);
 }
 main {
     display: grid;
