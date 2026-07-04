@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Francisco De Leon</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Francisco De Leon - Landing page for the course with biography, and dynamic JavaScript dates.">
+    <meta name="author" content="Francisco De Leon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Blank</h1>
-    
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scriptures</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Francisco De Leon Fernandez</h1>
+        <div class="container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="first">
+
+                    <p>My name is Francisco and I am from Guatemala. I enjoy learning new technologies and improving my
+                        programming skills
+                        every day. I am currently studying software development, with a focus on Python, C#, and .NET. I
+                        like solving problems,
+                        building projects, and challenging myself with new ideas. In my free time, I enjoy spending time
+                        with my family,
+                        learning English, and working toward my goal of becoming a professional software developer.</p>
+                    <img src="images/francisco-de-leon.webp" alt="Francisco De Leon" class="profile-image">
+                </div>
+                <h3>Guatemala, Guatemala</h3>
+                <div class="second">
+                    <figure>
+                        <img src="images/Flag_of_Guatemala.webp" alt="Guatemala Flag" class="flag-image">
+                        <figcaption>Official Flag of Guatemala</figcaption>
+                    </figure>
+                    <p>Guatemala is a beautiful country located in Central America. It is known for its rich culture,
+                        colorful traditions, and
+                        ancient Mayan history. The country is home to volcanoes, lakes, mountains, and tropical forests,
+                        making it one of the
+                        most diverse places in the region. Guatemala is also famous for its coffee, delicious food, and
+                        the kindness of its
+                        people.</p>
+
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="left">
+                    <ul>
+                        <li>Learn HTML, CSS, and JavaScript</li>
+                        <li>Build responsive websites</li>
+                        <li>Understand web development frameworks</li>
+                        <li>Work with databases and APIs</li>
+                        <li>Develop full-stack applications</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Francisco De Leon | Guatemala, Guatemala</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+
+    </footer>
 </body>
+
 </html>
