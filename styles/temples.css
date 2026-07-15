@@ -106,28 +106,3 @@ footer{
     font-size: large;
 }
 
-@media (max-width: 800px)
-{
-    nav{
-        display: none;
-    }     
-    nav.open {
-        display: flex;
-    }
-    
-}
-@media (min-width: 801px) {
-    #menu{
-        display: none;
-    }
-    header{
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-    nav {
-        flex-direction: row;
-        
-    }
-
-}
