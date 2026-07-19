@@ -1,84 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swiss Alps | WDD131</title>
+    <meta name="description" content="A webpage about the Swiss Alps, a place I would like to visit, including information about its location, population, weather, and natural beauty.">
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <h1>Swiss Alps</h1>
     </header>
     <main>
-        <div>
-        <picture>
-            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 767px)">
-            <img src="images/hero-small.webp" alt="Temple name and location" width="500" height="250">
-        </picture>
+        <div class="hero">
+            <picture>
+                <source srcset="images/swiss-alps-landscape.webp" media="(min-width: 768px)">
+                <img src="images/swiss-alps-vertical.webp" alt="Swiss Alps landscape" width="500" height="250">
+            </picture>
         </div>
         <div class="data-container">
+            <div class="title">
             <h2>Data</h2>
-        <div class="data">
-            <span>Area: </span>
-            <span>41,290 sq km</span>
-        </div>
-        <div class="data">
-            <span>Population: </span>
-            <span>8,947,000</span>
-        </div>
-        <div class="data">
-            <span>Capital: </span>
-            <span>Bern</span>
-        </div>
-        <div class="data">
-            <span>Languages: </span>
-            <span>German, French, Italian, Romansh</span>
-        </div>
-        <div class="data">
-            <span>Currency: </span>
-            <span>Swiss Franc (CHF)</span>
-        </div>
-        <div class="data">
-            <span>Time Zone: </span>
-            <span>UTC+1</span>
-        </div>
-        <div class="data">
-            <span>Calling Code: </span>
-            <span>+41</span>
-        </div>
-        <div class="data">
-            <span>Internet TLD: </span>
-            <span>.ch</span>
-        </div>
+            </div>
+            <div class="data">
+                <span class="first">Area: </span>
+                <span>41,290 sq km</span>
+            </div>
+            <div class="data">
+                <span class="first">Population: </span>
+                <span>8,947,000</span>
+            </div>
+            <div class="data">
+                <span class="first">Capital: </span>
+                <span>Bern</span>
+            </div>
+            <div class="data">
+                <span class="first">Languages: </span>
+                <span>German, French</span>
+            </div>
+            <div class="data">
+                <span class="first">Currency: </span>
+                <span>Swiss Franc (CHF)</span>
+            </div>
+            <div class="data">
+                <span class="first">Time Zone: </span>
+                <span>UTC+1</span>
+            </div>
+            <div class="data">
+                <span class="first">Calling Code: </span>
+                <span>+41</span>
+            </div>
+            <div class="data">
+                <span class="first">Internet TLD: </span>
+                <span>.ch</span>
+            </div>
         </div>
         <div class="weather-container">
-            <h2>Weather</h2>
+            <div class="title">
+                <h2>Weather</h2>
+            </div>
+            <div class="weather-image">
+                <img src="images/weathersvg.svg" alt="Sunny weather">
+            </div>
+        
             <div class="weather">
-                <span>Temperature: </spa>
-                <span>XX</span>
+                <span class="first">Temperature: </span>
+                <span>22°C</span>
             </div>
             <div class="weather">
-                <span>Conditions: </spa>
-                <span>XX</span>
+                <span class="first">Conditions: </span>
+                <span>Sunny</span>
             </div>
             <div class="weather">
-                <span>Wind: </spa>
-                <span>XX</span>
+                <span class="first">Wind: </span>
+                <span>10 km/h</span>
             </div>
             <div class="weather">
-                <span>Wind Chill: </spa>
-                <span>XX</span>
+                <span class="first">Wind Chill: </span>
+                
+                <span id="wind-chill">22°C</span>
             </div>
         </div>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Francisco De Leon | Guatemala, Guatemala</p>
         <p><span id="lastModified"></span></p>
-    
+
     </footer>
 </body>
+
 </html>

@@ -1,0 +1,79 @@
+@media (min-width: 768px) {
+
+
+    body {
+
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+    }
+
+    .hero {
+        margin-bottom: 0;
+        
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    .data-container,
+    .weather-container {
+        position: absolute;
+        font-size: small;
+    }
+
+    .title {
+        height: 40px;
+        width: 10rem;
+        padding: 0rem;
+        margin: 0 0 15px 0;
+    }
+
+    .data-container h2,
+    .weather-container h2 {
+        margin: 0 0 1rem 0;
+    }
+    .weather-image {
+        display: none;
+    }
+    .weather-container h2::after {
+        content: " ☀️";
+    }
+
+    .data-container,.weather-container{
+        width: 250px;
+        
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+        border-radius: 10px;
+        border-top: none;
+    }
+    .data-container  {
+        left: 15px;
+        top: 15px;  
+    }
+
+    .weather-container {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    footer {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+}
