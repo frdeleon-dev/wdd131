@@ -33,7 +33,7 @@
     .data-container,
     .weather-container {
         position: absolute;
-        font-size: small;
+        font-size: 0.85rem;
     }
 
     .title {
