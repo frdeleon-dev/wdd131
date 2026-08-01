@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    .mainlogo {
+        width: 15%;
+        height: auto;
+    }
+    section {
+        padding: 3rem;
+    }
+
+
+}
