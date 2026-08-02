@@ -1,0 +1,154 @@
+:root {
+    --primary-color: #6106ac;
+    --secondary-color: #e4a9ec;
+    --accent-color: #f0b429;
+    --text-color: #333;
+    --border-color: #ccc;
+    --shadow: 0 3px 10px rgba(0, 0, 0, .12);
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+form {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group p {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline: 3px solid rgba(31, 78, 121, .2);
+    border-color: var(--primary-color);
+}
+
+input[type="radio"] {
+
+    margin-right: .4rem;
+}
+.rating label,
+.features label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.rating label {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.form-group label:has(input[type="radio"]) {
+
+    display: inline-block;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+
+    margin-right: .5rem;
+}
+
+.form-group label:has(input[type="checkbox"]) {
+
+    font-weight: normal;
+}
+
+input[type="submit"] {
+
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+input[type="submit"]:hover {
+
+    background: #163a5c;
+}
+
+footer {
+
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+
+    margin: .25rem 0;
+}
