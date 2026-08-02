@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Product Review | WDD 131</title>
-
-    <meta name="description" content="Product Review Form">
+    <meta name="description" content="Submit a product review by selecting a product, rating its quality, choosing useful features, and sharing your feedback.">
     <meta name="author" content="Francisco De Leon">
-
     <link rel="stylesheet" href="styles/form.css">
-
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
@@ -30,17 +26,21 @@
                 <p>Overall Rating *</p>
             <div class="rating">
             
-                <label><input type="radio" name="rating" id="star1" value="1" required> ☆</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
             
-                <label><input type="radio" name="rating" id="star2" value="2"> ☆☆</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">☆☆</label>
             
-                <label><input type="radio" name="rating" id="star3" value="3"> ☆☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">☆☆☆</label>
             
-                <label><input type="radio" name="rating" id="star4" value="4"> ☆☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">☆☆☆☆</label>
             
-                <label><input type="radio" name="rating" id="star5" value="5"> ☆☆☆☆☆</label>
-            
-            </div>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">☆☆☆☆☆</label>
+
             </div>
     
             <div class="form-group">
