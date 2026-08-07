@@ -19,7 +19,7 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     line-height: 1.7;
-    
+
 
 }
 
@@ -36,8 +36,8 @@ header {
     padding: 1rem;
     margin-bottom: 2rem;
     position: relative;
-    
-    
+
+
 }
 
 header h1 {
@@ -65,7 +65,7 @@ nav {
     display: flex;
     flex-direction: column;
     /*margin: 0 2rem 0;*/
-    
+
 }
 
 nav a {
@@ -74,7 +74,7 @@ nav a {
     padding: 1rem;
     font-size: 12px;
     align-self: center;
-    
+
 }
 
 nav a:hover {
@@ -146,7 +146,7 @@ main h3 {
     font-size: 1rem;
     color: var(--text-color);
     margin-bottom: 1rem;
-    border-bottom: 1px solid var(--success-color);
+
     grid-column: 1 / -1;
 
 }
@@ -178,8 +178,8 @@ main h3 {
 }
 
 .news-item h4 {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.85rem;
+    margin: 0;
+    font-size: 1rem;
     color: var(--primary-color);
 }
 
@@ -187,6 +187,7 @@ main h3 {
     font-size: 12px;
     color: var(--text-color);
 }
+
 /*.our-services{
     max-height: 25rem;
 }*/
@@ -214,14 +215,16 @@ main h3 {
     justify-content: center;
     text-align: center;
 }
+
 .service-card img {
     width: 64px;
     height: 64px;
     margin-bottom: .5rem;
 }
+
 /*.service-card img {
     /*display: inline-block;*/
-    /*width: 100%;
+/*width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
 }*/
@@ -230,9 +233,34 @@ main h3 {
     display: inline-block;
     align-items: center;
     font-family: 'roboto', sans-serif;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
     color: var(--primary-color);
+}
+
+.events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--success-color);
+}
+
+.events-header a {
+    text-decoration: none;
+    font-size: .7rem;
+
+
+}
+
+.event {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 1rem;
+
+    padding: .75rem 0;
+
+    border-bottom: 1px solid #ddd;
 }
 
 .event-item {
@@ -241,8 +269,25 @@ main h3 {
     gap: 1rem;
     /*padding: 1rem;*/
     /*font-size: 12px;*/
-    
+
 }
+
+.event-date {
+
+    width: 60px;
+    height: 70px;
+
+    border: 1px solid #bbb;
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+
+    text-align: center;
+}
+
+/*
 .event-date{
     justify-content: center;
     text-align: center;
@@ -250,47 +295,114 @@ main h3 {
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
     /*width: 150px;*/
-    box-shadow: 1px 1px 5px gray;
+/* box-shadow: 1px 1px 5px gray;
     
+}*/
+.event-date p:first-child {
+
+    background: #f4f4f4;
+
+    font-size: .75rem;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #bbb;
+
+    padding: .2rem;
 }
-.event-date p:nth-of-type(1){
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    border-bottom: 1px solid var(--secondary-color);
-    padding: 0.15rem 0;
+
+.event-date p:last-child {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+    margin-top: .2rem;
 }
+
+/*
 .event-date p:nth-of-type(2) {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     font-size: 2rem;
+}*/
+.event-content h4 {
+
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary-color);
 }
-.event-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.event-content p {
+
+    margin: 0;
+    font-size: .8rem;
+    color: #666;
+    line-height: 1.4;
 }
-.report-banner{
+
+.report-banner {
+    display: grid;
+    grid-template-columns: 35px 1fr max-content;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+    margin: 1.5rem;
+
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+/*.report-banner{
     height: 6rem;
     /*display: grid;*/
-    display: flex;
-    /*flex: 1 1 140px;*/
-    /*grid-template-columns: 0.5fr 2fr 1fr;*/
-    align-items: center;
+display: flex;
+
+/*flex: 1 1 140px;*/
+/*grid-template-columns: 0.5fr 2fr 1fr;*/
+/*align-items: center;
+}*/
+.report-banner img {
+    width: 35px;
+    height: 35px;
 }
-.report-banner img{
-    width: 45px;
-    height: 45px;
-    /*display: inline-block;
-    /*justify-self: start;*/
-}
+
+/*
 .report-banner p{
     font-size: 0.75rem;
     line-height: 1;
     font-weight: bold;
     margin-left: 0.5rem;
+    font-family: "Roboto", sans-serif;*/
+/*margin: 0 2rem;
+}*/
+.report-banner p {
     font-family: "Roboto", sans-serif;
-    /*margin: 0 2rem;*/
+    font-size: .9rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    text-align: center;
 }
+
+.report-banner a {
+    text-decoration: none;
+
+    background: #222;
+    color: white;
+
+    padding: .55rem .75rem;
+
+    border-radius: 6px;
+
+    white-space: nowrap;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/*
 .report-banner a {
     font-size: 0.75rem;
     
@@ -301,7 +413,7 @@ main h3 {
     background-color: #000000;
     color: var(--card-color);
     text-align: center;
-}
+}*/
 /*Footer*/
 
 footer {
@@ -351,7 +463,7 @@ footer p {
     color: #666;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 849px) {
     nav {
         display: none;
     }
@@ -362,10 +474,11 @@ footer p {
 
 }
 
-@media (min-width: 801px) {
+@media (min-width: 850px) {
     #menu {
         display: none;
     }
+
     header {
         display: flex;
         justify-content: space-between;
