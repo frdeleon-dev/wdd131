@@ -8,7 +8,8 @@
     <meta name="description"
         content="WDD 131 - Project W06 - Neighborhood Connect - A web application that allows users to connect with their neighbors, share information, and build a stronger community.">
     <meta name="author" content="Francisco De Leon">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/n-connect.css">
+    <link rel="stylesheet" href="styles/n-connect-large.css">
 
     <script src="scripts/hamburger-menu.js" defer></script>
 
@@ -43,12 +44,18 @@
                 <source srcset="images/hero-small-neighborhood.jpg" media="(min-width: 500px)">
                 <img src="images/hero-small-neighborhood.jpg" alt="Neighborhood" width="640" height="426">
             </picture>
+            <div class="hero-text">
             <h2>Welcome to</h2>
             <h2>Neighborhood Connect</h2>
             <p>Stay informed, get involved, and help make our neighborhood a great place to live.</p>
+            </div>
         </div>
+        <div class="container">
         <div class="latest-news">
-            <h3>Latest News</h3>
+            <div class="news-header">
+                <h3>Latest News</h3>
+                <a href="#">View News</a>
+            </div>
             <section class="news-item">
                 <img src="images/news-garden.webp" alt="Community Garden">
                 <div class="news-content">
@@ -66,7 +73,11 @@
             </section>
         </div>
         <div class="our-services">
-            <h3>Our Services</h3>
+            <div class="service-header">
+                <h3>Our Services</h3>
+                <a href="#">View Events</a>
+            </div>
+            
             <div class="services">
                 <div class="service-card">
                     <img src="images/water_drop.svg" alt="Water Supply">
@@ -124,17 +135,7 @@
                     <p>Community Clubhouse</p>
                 </div>
             </div>
-            <div class="event">
-                <div class="event-date">
-                    <p>Aug</p>
-                    <p>10</p>
-                </div>
-                <div class="event-content">
-                    <h4>Neighborhood Meeting</h4>
-                    <p>June 5, 2026 - 7:00 PM</p>
-                    <p>Community Clubhouse</p>
-                </div>
-            </div>
+            
 
         </div>
         </section>
@@ -143,6 +144,7 @@
             <img src="images/mail.svg" alt="Maintenance">
             <p>Have a question or need to report an issue?</p>
             <a href="#Contact">Report an issue</a>
+        </div>
         </div>
     </main>
     <footer>

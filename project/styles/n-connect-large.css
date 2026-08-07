@@ -1,0 +1,97 @@
+@media (max-width: 849px) {
+    nav {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 850px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    nav {
+        flex-direction: row;
+
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .hero {
+        height: 500px;
+        overflow: hidden;
+        margin-top: -28px;
+        position: relative;
+    }
+
+    .hero img {
+        width: auto;
+        height: auto;
+        
+    }
+
+    .hero-text{
+        position: absolute;
+        background-color: #F5F5F5;
+        bottom: 150px;
+        right: 55px;
+        padding: 2rem;
+    }
+
+    .report-banner {
+        padding: 1rem;
+        margin: auto;
+        width: 65%;
+    }
+
+    .report-banner img {
+        width: 55px;
+        height: 55px;
+
+    }
+
+    .report-banner p {
+        font-size: 1.25rem;
+    }
+
+    .report-banner a {
+        text-decoration: none;
+
+        background: #222;
+        color: white;
+
+        padding: .75rem 3rem;
+
+        border-radius: 6px;
+
+        white-space: nowrap;
+        font-weight: normal;
+        font-size: 1rem;
+
+    }
+
+}
