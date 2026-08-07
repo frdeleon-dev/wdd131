@@ -36,6 +36,8 @@ header {
     padding: 1rem;
     margin-bottom: 2rem;
     position: relative;
+    
+    
 }
 
 header h1 {
@@ -62,14 +64,17 @@ nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin: 0 2rem 0;
-
+    /*margin: 0 2rem 0;*/
+    
 }
 
 nav a {
     color: var(--accent-color);
     text-decoration: none;
     padding: 1rem;
+    font-size: 12px;
+    align-self: center;
+    
 }
 
 nav a:hover {
@@ -111,7 +116,7 @@ h2:nth-of-type(1) {
 
 h2:nth-of-type(2) {
     margin: 1rem 0 1rem 0;
-    font-size: 1.10rem;
+    font-size: 1.5rem;
     line-height: 35%;
     font-weight: 700;
 }
@@ -169,24 +174,27 @@ main h3 {
     flex-direction: column;
     max-height: 100px;
     /*justify-content: center;*/
+    overflow: hidden;
 }
 
 .news-item h4 {
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: var(--primary-color);
 }
 
 .news-item p {
-    
+    font-size: 12px;
     color: var(--text-color);
 }
-
+/*.our-services{
+    max-height: 25rem;
+}*/
 .services {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .service-card {
@@ -195,25 +203,34 @@ main h3 {
     padding: 0.5rem;
     border-radius: 10px;
     border: 1px solid var(--secondary-color);
-    height: 80px;
-    width: 45%;
+    /*height: 100%;*/
+    /*width: 45%;*/
+    flex: 1 1 140px;
+    max-width: 180px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
-
 .service-card img {
-    display: inline-block;
-    width: auto;
-    height: 100%;
-    margin-bottom: 0.5rem;
+    width: 64px;
+    height: 64px;
+    margin-bottom: .5rem;
 }
+/*.service-card img {
+    /*display: inline-block;*/
+    /*width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}*/
 
 .service-card p {
     display: inline-block;
     align-items: center;
     font-family: 'roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -222,7 +239,8 @@ main h3 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
-    padding: 1rem;
+    /*padding: 1rem;*/
+    /*font-size: 12px;*/
     
 }
 .event-date{
@@ -230,7 +248,8 @@ main h3 {
     text-align: center;
     margin-top: 0.5rem;
     border: 1px solid var(--secondary-color);
-    width: 150px;
+    border-radius: 5px;
+    /*width: 150px;*/
     box-shadow: 1px 1px 5px gray;
     
 }
@@ -243,7 +262,7 @@ main h3 {
 .event-date p:nth-of-type(2) {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .event-content{
     display: flex;
@@ -252,33 +271,84 @@ main h3 {
 }
 .report-banner{
     height: 6rem;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr;
+    /*display: grid;*/
+    display: flex;
+    /*flex: 1 1 140px;*/
+    /*grid-template-columns: 0.5fr 2fr 1fr;*/
     align-items: center;
 }
 .report-banner img{
-    width: auto;
-    height: 100%;
-    display: inline-block;
-    justify-self: center;
+    width: 45px;
+    height: 45px;
+    /*display: inline-block;
+    /*justify-self: start;*/
 }
 .report-banner p{
-    font-size: 1rem;
+    font-size: 0.75rem;
+    line-height: 1;
     font-weight: bold;
-    line-height: 1.5;
-    font-family: "Poppins", sans-serif;
-    margin: 0 2rem;
+    margin-left: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    /*margin: 0 2rem;*/
 }
 .report-banner a {
     font-size: 0.75rem;
-    font-weight: bold;
+    
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0.50rem;
     border-radius: 5px;
-    background-color: #333333;
+    background-color: #000000;
     color: var(--card-color);
     text-align: center;
+}
+/*Footer*/
+
+footer {
+    background-color: var(--card-color);
+    margin-top: 2rem;
+    border-top: 1px solid #d9d9d9;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: .5rem 0;
+
+    background-color: white;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, .1);
+}
+
+.footer-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: var(--text-color);
+
+    font-size: .75rem;
+    font-family: "Roboto", sans-serif;
+
+    gap: .2rem;
+    flex: 1;
+
+    transition: .2s ease;
+}
+
+.footer-menu a img {
+    width: 28px;
+    height: 28px;
+}
+
+footer p {
+    text-align: center;
+    font-size: .75rem;
+    padding: .75rem;
+    color: #666;
 }
 
 @media (max-width: 800px) {
@@ -295,6 +365,11 @@ main h3 {
 @media (min-width: 801px) {
     #menu {
         display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     header {
