@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood Connect | WDD 131 </title>
+    <meta name="description"
+        content="WDD 131 - Project W06 - Neighborhood Connect - A web application that allows users to connect with their neighbors, share information, and build a stronger community.">
+    <meta name="author" content="Francisco De Leon">
+<link rel="stylesheet" href="styles/n-connect.css">
+<link rel="stylesheet" href="styles/n-connect-large.css">
+<link rel="stylesheet" href="styles/news-large.css">
+
+    <script src="scripts/hamburger-menu.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mainlogo">
+            <img src="images/logo-2.png" alt="Neighborhood Connect logo">
+            <h1>Neighborhood Connect</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="events.html">EVENTS</a>
+            <a href="report.html">REPORT AN ISSUE</a>
+
+
+        </nav>
+    </header>
+    <main>
+<section class="report-banner">
+
+    <img src="images/report.svg" alt="Report an issue">
+
+    <div>
+        <h3>Report an Issue</h3>
+        <p>
+            Help us keep our neighborhood safe, clean, and welcoming.
+            Let us know about problems that need attention.
+        </p>
+    </div>
+
+</section>
+        <div class="container">
+            <section class="report-form">
+
+                <div class="news-header">
+                    <h3>Issue Report Form</h3>
+                </div>
+
+                <form id="issue-form" class="email-form">
+
+                    <div class="form-group">
+
+                        <label for="full-name">Full Name *</label>
+
+                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"
+                            autocomplete="name" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address *</label>
+
+                        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="issue-type">Issue Type *</label>
+                        <select id="issue-type" name="issue-type" required>
+                            <option value="" disabled selected>
+                                Select an issue type
+                            </option>
+                            <option value="water">
+                                Water Supply
+                            </option>
+                            <option value="security">
+                                Security
+                            </option>
+                            <option value="maintenance">
+                                Maintenance
+                            </option>
+                            <option value="cleaning">
+                                Cleaning
+                            </option>
+                            <option value="other">
+                                Other
+                            </option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location *</label>
+                        <input type="text" id="location" name="location" placeholder="Enter the location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description *</label>
+                        <textarea id="description" name="description" rows="5"
+                            placeholder="Please describe the issue..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-report">
+                        Submit Report
+                    </button>
+                    <p>* Required fields</p>
+                </form>
+
+                <!-- submited message -->
+                <div id="form-message" aria-live="polite"></div>
+            </section>
+
+
+            <section class="our-services">
+                <div class="service-header">
+                    <h3>How It Works</h3>
+                </div>
+                <div class="services">
+
+                    <!-- Step 1 -->
+                    <article class="service-card">
+
+                        <img src="images/report-icon.webp" alt="Report icon" loading="lazy">
+
+                        <h4>1. Report</h4>
+
+                        <p>
+                            Fill out the form and provide information about the issue.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Step 2 -->
+                    <article class="service-card">
+
+                        <img src="images/review-icon.webp" alt="Review icon" loading="lazy">
+
+                        <h4>2. Review</h4>
+
+                        <p>
+                            Our community team will review your report.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Step 3 -->
+                    <article class="service-card">
+
+                        <img src="images/action-icon.webp" alt="Action icon" loading="lazy">
+
+                        <h4>3. Action</h4>
+
+                        <p>
+                            We will take action and work toward a solution.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <a href="#Contact">
+                <img src="images/home.svg" alt="home page">
+                Home
+            </a>
+            <a href="#Contact">
+                <img src="images/news.svg" alt="News">
+                News
+            </a>
+            <a href="#Contact">
+                <img src="images/services.svg" alt="Services">
+                Services
+            </a>
+            <a href="#Contact">
+                <img src="images/events.svg" alt="Events">
+                Events
+            </a>
+            <a href="#Contact">
+                <img src="images/mail.svg" alt="Report">
+                Report
+            </a>
+        </div>
+        <p>&copy; 2023 Neighborhood Connect. All rights reserved.</p>
+    </footer>

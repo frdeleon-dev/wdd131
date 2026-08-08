@@ -1,9 +1,9 @@
 @media screen and (min-width: 1000px) {
 
-    .latest-news , 
-    .our-services{
+    .latest-news 
+    {
             grid-column: span 2;
-        }
+    }
 
     .news-item {
         
