@@ -1,9 +1,7 @@
 @media screen and (min-width: 1000px) {
 
     .latest-news , 
-    .our-services,
-    .events-section,
-    .upcoming-events{
+    .our-services{
             grid-column: span 2;
         }
 
@@ -99,13 +97,6 @@
             margin: 2rem auto;
         }
 
-        .upcoming-events {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-    
-            margin: 0;
-        }
         .event-item {
             display: flex;
             gap: 1rem;
