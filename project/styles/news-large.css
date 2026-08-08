@@ -1,9 +1,10 @@
 @media screen and (min-width: 1000px) {
 
     .latest-news , 
-    .our-services{
+    .our-services,
+    .events-section,
+    .upcoming-events{
             grid-column: span 2;
-            
         }
 
     .news-item {
@@ -84,7 +85,31 @@
     .email-form button:hover {
         background-color: var(--success-color);
     }
-    .categories{
-       
+    /*Events*/
+
+        .events-section {
+            /*display: grid;
+            grid-template-columns: 2fr 1fr;*/
+            gap: 1rem;
+            /*max-width: 1100px;*/
+            margin: 2rem auto;
+        }
+
+    .upcoming-events{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
+    .event-item {
+    display: flex;
+    
+    gap: 1rem;
+    /*padding: 1rem;*/
+    /*font-size: 12px;*/
+    
+    }
+    .full-calendar-button{
+        column-span: 2;
+    }
+
 }

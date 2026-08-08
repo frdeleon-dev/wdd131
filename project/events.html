@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood Connect | WDD 131 </title>
+    <meta name="description"
+        content="WDD 131 - Project W06 - Neighborhood Connect - A web application that allows users to connect with their neighbors, share information, and build a stronger community.">
+    <meta name="author" content="Francisco De Leon">
+    <link rel="stylesheet" href="styles/n-connect.css">
+    <link rel="stylesheet" href="styles/n-connect-large.css">
+    <link rel="stylesheet" href="styles/news-large.css">
+
+    <script src="scripts/hamburger-menu.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="mainlogo">
+            <img src="images/logo-2.png" alt="Neighborhood Connect logo">
+            <h1>Neighborhood Connect</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="events.html">EVENTS</a>
+            <a href="#Resources">REPORT AN ISSUE</a>
+            <a href="#Contact">CONTACT</a>
+
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero-image">
+                <picture>
+                    <source srcset="images/hero-large-neighborhood.jpg" media="(min-width: 1000px)">
+                    <source srcset="images/hero-small-neighborhood.jpg" media="(min-width: 500px)">
+                    <img src="images/hero-small-neighborhood.jpg" alt="Neighborhood" width="640" height="426">
+                </picture>
+            </div>
+            <div class="hero-text">
+                <h2>Welcome to</h2>
+                <h2>Neighborhood Connect</h2>
+                <p>Stay informed, get involved, and help make our neighborhood a great place to live.</p>
+            </div>
+            <div class="hero-text-large">
+                <h2>Building a Better</h2>
+                <h2>Community Together</h2>
+                <p>Stay informed, get involved, and help </p>
+                <p>make our neighborhood a great place to live.</p>
+            </div>
+        </div>
+        <div class="container">
+            <section class="events-section">
+
+                <!-- Upcoming Events -->
+                <section class="upcoming-events">
+                    <h3>Upcoming Events</h3>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <p>Agu</p>
+                            <p>10</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Community Clean-Up Day</h4>
+                            <p>◉ Sat, May 10, 2026 &nbsp; | &nbsp; 8:00 AM</p>
+                            <p>⌖ Central Park</p>
+                            <p>Let's work together to keep our neighborhood clean!</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <p>May</p>
+                            <p>24</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>Neighborhood BBQ</h4>
+                            <p>◉ Sat, May 24, 2026 &nbsp; | &nbsp; 1:00 PM</p>
+                            <p>⌖ Community Center</p>
+                            <p>Food, fun, and games for the whole family!</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <p>Jun</p>
+                            <p>07</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>HOA Meeting</h4>
+                            <p>◉ Sat, Jun 7, 2026 &nbsp; | &nbsp; 6:00 PM</p>
+                            <p>⌖ Community Center</p>
+                            <p>Monthly HOA meeting. All residents welcome.</p>
+                        </div>
+
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <p>Jun</p>
+                            <p>07</p>
+                        </div>
+                        <div class="event-content">
+                            <h4>HOA Meeting</h4>
+                            <p>◉ Sat, Jun 7, 2026 &nbsp; | &nbsp; 6:00 PM</p>
+                            <p>⌖ Community Center</p>
+                            <p>Monthly HOA meeting. All residents welcome.</p>
+                        </div>
+
+                    </div>
+                    <button class="full-calendar-button">
+                        View Full Calendar
+                    </button>
+                </section>
+
+                <!-- Calendar Sidebar -->
+                <aside class="calendar-sidebar">
+
+                    <!-- Calendar -->
+                    <section class="calendar">
+
+                        <div class="calendar-header">
+
+                            <button type="button" aria-label="Previous month">
+                                &lt;
+                            </button>
+
+                            <h3>May 2026</h3>
+
+                            <button type="button" aria-label="Next month">
+                                &gt;
+                            </button>
+
+                        </div>
+
+
+                        <div class="calendar-weekdays">
+                            <span>Su</span>
+                            <span>Mo</span>
+                            <span>Tu</span>
+                            <span>We</span>
+                            <span>Th</span>
+                            <span>Fr</span>
+                            <span>Sa</span>
+                        </div>
+
+
+                        <div class="calendar-days">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span class="selected">10</span>
+
+                            <span>11</span>
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                            <span>16</span>
+                            <span>17</span>
+
+                            <span>18</span>
+                            <span>19</span>
+                            <span>20</span>
+                            <span>21</span>
+                            <span>22</span>
+                            <span>23</span>
+                            <span>24</span>
+
+                            <span>25</span>
+                            <span>26</span>
+                            <span>27</span>
+                            <span>28</span>
+                            <span>29</span>
+                            <span>30</span>
+                            <span>31</span>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Event Filters -->
+                    <section class="event-filters">
+
+                        <h3>Filter Events</h3>
+
+                        <label>
+                            <input type="checkbox" checked>
+                            All Events
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Community Events
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            HOA Meetings
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Recreation
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Other
+                        </label>
+
+                    </section>
+
+                </aside>
+        </div>
+           
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <a href="#Contact">
+                <img src="images/home.svg" alt="home page">
+                Home
+            </a>
+            <a href="#Contact">
+                <img src="images/news.svg" alt="News">
+                News
+            </a>
+            <a href="#Contact">
+                <img src="images/services.svg" alt="Services">
+                Services
+            </a>
+            <a href="#Contact">
+                <img src="images/events.svg" alt="Events">
+                Events
+            </a>
+            <a href="#Contact">
+                <img src="images/mail.svg" alt="Report">
+                Report
+            </a>
+        </div>
+        <p>&copy; 2023 Neighborhood Connect. All rights reserved.</p>
+    </footer>
