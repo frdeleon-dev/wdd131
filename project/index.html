@@ -28,10 +28,10 @@
         </div>
         <button id="menu" aria-label="Toggle Menu"></button>
         <nav>
-            <a href="#Home">HOME</a>
-            <a href="#about">NEWS</a>
-            <a href="#Services">SERVICES</a>
-            <a href="#Events">EVENTS</a>
+            <a href="index.html">HOME</a>
+            <a href="news.html">NEWS</a>
+            <a href="services.html">SERVICES</a>
+            <a href="events.html">EVENTS</a>
             <a href="#Resources">REPORT AN ISSUE</a>
             <a href="#Contact">CONTACT</a>
 
@@ -39,106 +39,116 @@
     </header>
     <main>
         <div class="hero">
-            <picture>
-                <source srcset="images/hero-large-neighborhood.jpg" media="(min-width: 1000px)">
-                <source srcset="images/hero-small-neighborhood.jpg" media="(min-width: 500px)">
-                <img src="images/hero-small-neighborhood.jpg" alt="Neighborhood" width="640" height="426">
-            </picture>
+            <div class="hero-image">
+                <picture>
+                    <source srcset="images/hero-large-neighborhood.jpg" media="(min-width: 1000px)">
+                    <source srcset="images/hero-small-neighborhood.jpg" media="(min-width: 500px)">
+                    <img src="images/hero-small-neighborhood.jpg" alt="Neighborhood" width="640" height="426">
+                </picture>
+            </div>
             <div class="hero-text">
-            <h2>Welcome to</h2>
-            <h2>Neighborhood Connect</h2>
-            <p>Stay informed, get involved, and help make our neighborhood a great place to live.</p>
+                <h2>Welcome to</h2>
+                <h2>Neighborhood Connect</h2>
+                <p>Stay informed, get involved, and help make our neighborhood a great place to live.</p>
+            </div>
+            <div class="hero-text-large">
+                <h2>Building a Better</h2>
+                <h2>Community Together</h2>
+                <p>Stay informed, get involved, and help </p>
+                <p>make our neighborhood a great place to live.</p>
             </div>
         </div>
         <div class="container">
-        <div class="latest-news">
-            <div class="news-header">
-                <h3>Latest News</h3>
-                <a href="#">View News</a>
+            <div class="latest-news">
+                <div class="news-header">
+                    <h3>Latest News</h3>
+                    <a href="#">View News</a>
+                </div>
+                <section class="news-item">
+                    <img src="images/news-garden.webp" alt="Community Garden">
+                    <div class="news-content">
+                        <h4>Community Garden Project</h4>
+                        <p>Our community garden project is underway! Volunteers are preparing the garden and planting
+                            new flowers and vegetables.
+                            Join us to help create a greener and more welcoming neighborhood.</p>
+                    </div>
+                </section>
+                <section class="news-item">
+                    <img src="images/news-fire.webp" alt="Fire Safety Workshop">
+                    <div class="news-content">
+                        <h4>Fire Safety Workshop</h4>
+                        <p>Join us for a free fire safety workshop! Learn essential tips to protect yourself, your
+                            family, and your workplace from fire hazards. In this interactive session.</p>
+                    </div>
+                </section>
             </div>
-            <section class="news-item">
-                <img src="images/news-garden.webp" alt="Community Garden">
-                <div class="news-content">
-                    <h4>Community Garden Project</h4>
-                    <p>Our community garden project is underway! Volunteers are preparing the garden and planting new flowers and vegetables.
-                    Join us to help create a greener and more welcoming neighborhood.</p>
+            <div class="our-services">
+                <div class="service-header">
+                    <h3>Our Services</h3>
+                    <a href="#">View Events</a>
                 </div>
-            </section>
-            <section class="news-item">
-                <img src="images/news-fire.webp" alt="Fire Safety Workshop">
-                <div class="news-content">
-                    <h4>Fire Safety Workshop</h4>
-                    <p>Join us for a free fire safety workshop! Learn essential tips to protect yourself, your family, and your workplace from fire hazards. In this interactive session.</p>
-                </div>
-            </section>
-        </div>
-        <div class="our-services">
-            <div class="service-header">
-                <h3>Our Services</h3>
-                <a href="#">View Events</a>
-            </div>
-            
-            <div class="services">
-                <div class="service-card">
-                    <img src="images/water_drop.svg" alt="Water Supply">
-                    <p>Water supply</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/security.svg" alt="Security">
-                    <p>Security</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/cleaning.svg" alt="Cleaning Days">
-                    <p>Cleaning Days</p>
-                </div>
-                <div class="service-card">
-                    <img src="images/maintenance.svg" alt="Maintenance">
-                    <p>Maintenance</p>
-                </div>
-            </div>
-        </div>
-        <div class="upcoming-events">
-            <div class="events-header">
-                <h3>Upcoming Events</h3>
-                <a href="#">View Calendar</a>
-            </div>
-            <div class="event">
-                <div class="event-date">
-                    <p>Aug</p>
-                    <p>10</p>
-                </div>
-                <div class="event-content">
-                    <h4>Neighborhood Meeting</h4>
-                    <p>June 5, 2026 - 7:00 PM</p>
-                    <p>Community Clubhouse</p>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event-date">
-                    <p>Aug</p>
-                    <p>10</p>
-                </div>
-                <div class="event-content">
-                    <h4>Neighborhood Meeting</h4>
-                    <p>June 5, 2026 - 7:00 PM</p>
-                    <p>Community Clubhouse</p>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event-date">
-                    <p>Aug</p>
-                    <p>10</p>
-                </div>
-                <div class="event-content">
-                    <h4>Neighborhood Meeting</h4>
-                    <p>June 5, 2026 - 7:00 PM</p>
-                    <p>Community Clubhouse</p>
-                </div>
-            </div>
-            
 
-        </div>
-        </section>
+                <div class="services">
+                    <div class="service-card">
+                        <img src="images/water_drop.svg" alt="Water Supply">
+                        <p>Water supply</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/security.svg" alt="Security">
+                        <p>Security</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/cleaning.svg" alt="Cleaning Days">
+                        <p>Cleaning Days</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/maintenance.svg" alt="Maintenance">
+                        <p>Maintenance</p>
+                    </div>
+                </div>
+            </div>
+            <div class="upcoming-events">
+                <div class="events-header">
+                    <h3>Upcoming Events</h3>
+                    <a href="#">View Calendar</a>
+                </div>
+                <div class="event">
+                    <div class="event-date">
+                        <p>Aug</p>
+                        <p>10</p>
+                    </div>
+                    <div class="event-content">
+                        <h4>Neighborhood Meeting</h4>
+                        <p>June 5, 2026 - 7:00 PM</p>
+                        <p>Community Clubhouse</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-date">
+                        <p>Aug</p>
+                        <p>10</p>
+                    </div>
+                    <div class="event-content">
+                        <h4>Neighborhood Meeting</h4>
+                        <p>June 5, 2026 - 7:00 PM</p>
+                        <p>Community Clubhouse</p>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-date">
+                        <p>Aug</p>
+                        <p>10</p>
+                    </div>
+                    <div class="event-content">
+                        <h4>Neighborhood Meeting</h4>
+                        <p>June 5, 2026 - 7:00 PM</p>
+                        <p>Community Clubhouse</p>
+                    </div>
+                </div>
+
+
+            </div>
+            </section>
         </div>
         <div class="report-banner">
             <img src="images/mail.svg" alt="Maintenance">

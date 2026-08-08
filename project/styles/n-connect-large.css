@@ -42,24 +42,56 @@
     }
 
     .hero {
-        height: 500px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: -28px auto 10px;
+        max-width: 1450px;
+    }
+
+    .hero-image {
+        height: 350px;
         overflow: hidden;
-        margin-top: -28px;
-        position: relative;
+        border-radius: 10px 0 0 10px;
+        border: 1px solid var(--secondary-color);
     }
 
     .hero img {
         width: auto;
         height: auto;
-        
+        object-fit: cover;
+        object-position: center;
+
     }
 
-    .hero-text{
-        position: absolute;
-        background-color: #F5F5F5;
-        bottom: 150px;
-        right: 55px;
-        padding: 2rem;
+    .hero-text {
+        display: none;
+    }
+
+    .hero-text-large {
+        display: block;
+        text-align: left;
+        align-content: center;
+        border: 1px solid var(--secondary-color);
+        border-radius: 0 10px 10px 0;
+        padding-left: 25px;
+
+    }
+
+    h2:nth-of-type(1),
+    h2:nth-of-type(2) {
+        margin-top: 0;
+        font-size: 2rem;
+        line-height: 1.25;
+        font-weight: 700;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+
     }
 
     .report-banner {
@@ -93,5 +125,7 @@
         font-size: 1rem;
 
     }
+
+    /*Service*/
 
 }

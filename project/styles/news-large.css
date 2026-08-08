@@ -1,0 +1,90 @@
+@media screen and (min-width: 1000px) {
+
+    .latest-news , 
+    .our-services{
+            grid-column: span 2;
+            
+        }
+
+    .news-item {
+        
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    .news-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+           .news-item img {
+            width: 100%;
+            height: auto;
+            max-width: 100px;
+            margin-bottom: 0.5rem;
+            background-color: black;
+        }
+
+    .news-content {
+        padding: 1.25rem;
+
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .news-content h4 {
+        font-family: "Poppins", sans-serif;
+        color: var(--primary-color);
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .news-content p {
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    .stay-connected {
+        /*background-color: var(--secondary-color);*/
+        /*color: white;*/
+
+        padding: 1rem 2rem;
+        
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .email-form input:focus {
+        outline: 3px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .email-form button {
+        padding: 0.9rem 1.5rem;
+
+        border: none;
+        border-radius: 5px;
+
+        /*background-color: var(--primary-color);*/
+        color: white;
+
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+
+        cursor: pointer;
+
+        transition: background-color 0.2s ease;
+    }
+
+    .email-form button:hover {
+        background-color: var(--success-color);
+    }
+    .categories{
+       
+    }
+}

@@ -98,9 +98,20 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
+.hero-image{
+    height: 12rem;
+    overflow: hidden;  
+}
+
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+.hero-text-large{
+    display: none;
 }
 
 .hero h2 {
@@ -463,38 +474,73 @@ footer p {
     padding: .75rem;
     color: #666;
 }
-/*
-@media (max-width: 849px) {
-    nav {
-        display: none;
-    }
 
-    nav.open {
-        display: flex;
-    }
+/*News*/
 
+.suscribe {
+    align-content: center;
 }
 
-@media (min-width: 850px) {
-    #menu {
-        display: none;
-    }
+.suscribe img {
+    display: block;
+    margin: auto;
+}
+.stay-connected {
+    
+    color: var(--text-color);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.stay-connected h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    
+}
 
-    header {
-        flex-direction: row;
-        justify-content: space-between;
+.stay-connected p {
+    font-size: 1rem;
+    margin: 1rem;
+}
 
-    }
+.stay-connected label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
 
-    nav {
-        flex-direction: row;
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
 
-    }
+.email-form input {
+    /*width: 100%;*/
+    padding: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    box-shadow: 1px 1px 5px rgb(214, 212, 212);
+}
 
-}*/
+.email-form button, .suscribe button {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.email-form button:hover , .suscribe button:hover {
+    background-color: var(--success-color);
+}
