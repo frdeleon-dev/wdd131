@@ -178,4 +178,10 @@
     justify-content: center;
     align-content: center;
 }
+.footer-menu{
+    display: none;
+}
+.footer-large {
+    display: grid;
+}
 }
