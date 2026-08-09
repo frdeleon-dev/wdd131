@@ -8,11 +8,12 @@
     <meta name="description"
         content="WDD 131 - Project W06 - Neighborhood Connect - A web application that allows users to connect with their neighbors, share information, and build a stronger community.">
     <meta name="author" content="Francisco De Leon">
-<link rel="stylesheet" href="styles/n-connect.css">
-<link rel="stylesheet" href="styles/n-connect-large.css">
-<link rel="stylesheet" href="styles/news-large.css">
+    <link rel="stylesheet" href="styles/n-connect.css">
+    <link rel="stylesheet" href="styles/n-connect-large.css">
+    <link rel="stylesheet" href="styles/news-large.css">
 
     <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/issue-report.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,53 +40,43 @@
         </nav>
     </header>
     <main>
-<section class="report-banner">
+        <section class="report-banner">
 
-    <img src="images/report.svg" alt="Report an issue">
+            <img src="images/report.svg" alt="Report an issue">
 
-    <div>
-        <h3>Report an Issue</h3>
-        <p>
-            Help us keep our neighborhood safe, clean, and welcoming.
-            Let us know about problems that need attention.
-        </p>
-    </div>
+            <div>
+                <h3>Report an Issue</h3>
+                <p>
+                    Help us keep our neighborhood safe, clean, and welcoming.
+                    Let us know about problems that need attention.
+                </p>
+            </div>
 
-</section>
+        </section>
         <div class="container">
             <section class="report-form">
 
                 <div class="news-header">
                     <h3>Issue Report Form</h3>
                 </div>
-
                 <form id="issue-form" class="email-form">
-
                     <div class="form-group">
-
                         <label for="full-name">Full Name *</label>
-
                         <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"
                             autocomplete="name" required>
-
                     </div>
-
                     <div class="form-group">
-
                         <label for="email">Email Address *</label>
-
                         <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
                             required>
-
                     </div>
-
                     <div class="form-group">
-
                         <label for="issue-type">Issue Type *</label>
                         <select id="issue-type" name="issue-type" required>
                             <option value="" disabled selected>
                                 Select an issue type
                             </option>
+                            <!--
                             <option value="water">
                                 Water Supply
                             </option>
@@ -100,11 +91,9 @@
                             </option>
                             <option value="other">
                                 Other
-                            </option>
+                            </option>-->
                         </select>
-
                     </div>
-
                     <div class="form-group">
                         <label for="location">Location *</label>
                         <input type="text" id="location" name="location" placeholder="Enter the location" required>
@@ -127,56 +116,59 @@
             </section>
 
 
-            <section class="our-services">
-                <div class="service-header">
-                    <h3>How It Works</h3>
+            <section class="how-it-works">
+                <div class=".how-it-works-header">
+                    <h2>How It Works</h2>
                 </div>
-                <div class="services">
+                <div class="steps">
 
-                    <!-- Step 1 -->
-                    <article class="service-card">
+                    <article class="report-card">
 
-                        <img src="images/report-icon.webp" alt="Report icon" loading="lazy">
-
-                        <h4>1. Report</h4>
-
-                        <p>
-                            Fill out the form and provide information about the issue.
-                        </p>
-
+                        <img src="images/report-icon.svg" alt="Report icon" loading="lazy">
+                        <div class="text">
+                            <h4>1. Report</h4>
+                            <p>
+                                Fill out the form and provide information about the issue.
+                            </p>
+                        </div>
                     </article>
 
+                    <article class="report-card">
 
-                    <!-- Step 2 -->
-                    <article class="service-card">
-
-                        <img src="images/review-icon.webp" alt="Review icon" loading="lazy">
-
-                        <h4>2. Review</h4>
-
-                        <p>
-                            Our community team will review your report.
-                        </p>
-
+                        <img src="images/check-mail.svg" alt="Review icon" loading="lazy">
+                        <div class="text">
+                            <h4>2. Review</h4>
+                            <p>
+                                Our community team will review your report.
+                            </p>
+                        </div>
                     </article>
 
+                    <article class="report-card">
 
-                    <!-- Step 3 -->
-                    <article class="service-card">
+                        <img src="images/gear-action.svg" alt="Action icon" loading="lazy">
+                        <div class="text">
+                            <h4>3. Action</h4>
 
-                        <img src="images/action-icon.webp" alt="Action icon" loading="lazy">
-
-                        <h4>3. Action</h4>
-
-                        <p>
-                            We will take action and work toward a solution.
-                        </p>
-
+                            <p>
+                                We will take action and work toward a solution.
+                            </p>
+                        </div>
                     </article>
 
                 </div>
+                <section class="latest-news">
+                
+                    <div class="news-header">
+                        <h3>My Submitted Reports</h3>
+                    </div>
+                
+                    <div id="reports-container"></div>
+                
+                </section>
 
             </section>
+            
 
 
     </main>

@@ -198,7 +198,7 @@ main h3 {
     font-weight: 600;
     color: var(--primary-color);
 }
-.events-header , .service-header , .news-header{
+.events-header , .service-header , .news-header , .how-it-works-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -348,7 +348,7 @@ footer p {
     text-align: center;
 }
 
-.stay-connected h2 {
+.stay-connected h2, .how-it-works h2 {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
     margin-bottom: 0.75rem;
@@ -370,15 +370,18 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    
 }
-.email-form input {
+.email-form input , .email-form select , .email-form textarea{
     padding: 0.85rem;
     border: none;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     box-shadow: 1px 1px 5px rgb(214, 212, 212);
+    width: 100%;
 }
+
 .email-form button, .suscribe button {
     width: 100%;
     padding: 0.85rem;
@@ -532,4 +535,15 @@ footer p {
 
 .event-filters input {
     margin-right: .4rem;
+}
+
+/*Form*/
+.how-it-works{
+    text-align: center;
+    margin: 2rem;
+
+}
+/*Reports*/
+#reports-item{
+    border-bottom: 1px solid var(--success-color);
 }

@@ -44,22 +44,23 @@
     .hero {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        margin: -28px auto 10px;
+        margin: -15px auto 10px;
         max-width: 1450px;
+        box-shadow: 1px 1px 5px grey;
     }
 
     .hero-image {
         height: 350px;
         overflow: hidden;
-        border-radius: 10px 0 0 10px;
-        border: 1px solid var(--secondary-color);
+        /*border-radius: 10px 0 0 10px;*/
+        /*border: 1px solid var(--secondary-color);*/
     }
 
     .hero img {
         width: auto;
         height: auto;
         object-fit: cover;
-        object-position: center;
+        object-position: left center;
 
     }
 
@@ -72,8 +73,10 @@
         text-align: left;
         align-content: center;
         border: 1px solid var(--secondary-color);
-        border-radius: 0 10px 10px 0;
+        /*border-radius: 0 10px 10px 0;*/
         padding-left: 25px;
+        background-color: var(--secondary-color);
+        color: white;
 
     }
 
@@ -135,5 +138,44 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     
+}
+/*Report*/
+.report-card {
+    background-color: var(--card-color);
+    padding: 0.5rem;
+    /*border-radius: 10px;*/
+    /*border: 1px solid var(--secondary-color);*/
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    /*text-align: center;*/
+}
+.report-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: .5rem;
+}
+.report-card h4 {
+    color: var(--primary-color);
+    margin-left: 15px;
+    
+}
+
+.report-card p {
+    display: inline-block;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    font-size: .8rem;
+    color: var(--tex-color);
+    margin-left: 15px;
+}
+
+.how-it-works {
+    text-align: start;
+    margin: 2rem;
+    justify-content: center;
+    align-content: center;
 }
 }

@@ -1,6 +1,6 @@
 @media screen and (min-width: 1000px) {
 
-    .latest-news 
+    .latest-news , .report-form 
     {
             grid-column: span 2;
     }
