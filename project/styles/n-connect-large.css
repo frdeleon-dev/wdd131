@@ -108,9 +108,16 @@
         height: 55px;
 
     }
-
+    .report-banner h2 {
+        font-size: 1.55rem;
+        text-align: left;
+        margin-left: 2rem;
+        margin-bottom: .5rem;
+    }
     .report-banner p {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
+        text-align: left;
+        margin-left: 2rem;
     }
 
     .report-banner a {
@@ -168,7 +175,7 @@
     align-items: center;
     font-family: 'roboto', sans-serif;
     font-size: .8rem;
-    color: var(--tex-color);
+    color: black;
     margin-left: 15px;
 }
 
